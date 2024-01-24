@@ -10,16 +10,18 @@ function App() {
         <img src={nopLogo} className="logo" alt="NÖP" />
       </h1>
       <p className="members">
-        <span>ARNAR - GUITAR</span>
         <img className="iconSeparator" src={nopIcon} alt='' />
-        <span>ÁLFUR - VOCALS</span>
+        <span>ARNAR GUITAR</span>
         <img className="iconSeparator" src={nopIcon} alt='' />
-        <span>JÓHANN - DRUMS</span>
+        <span>ÁLFUR VOCALS</span>
         <img className="iconSeparator" src={nopIcon} alt='' />
-        <span>HARRÝ - BASS</span>
+        <span>JÓHANN DRUMS</span>
+        <img className="iconSeparator" src={nopIcon} alt='' />
+        <span>HARRÝ BASS</span>
+        <img className="iconSeparator" src={nopIcon} alt='' />
       </p>
       <div className="card">
-        <p style={{ minWidth: 600 }}>
+        <p className="spotContainer">
           <iframe style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/track/4vICglWYruXlpiurAxN7hF?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </p>
       </div>

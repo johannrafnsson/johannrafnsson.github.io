@@ -1,32 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import nopLogo from './assets/nop-logo-transparent.png'
+import nopIcon from './assets/favicon_nop_white/favicon-32x32.png'
 import './App.css'
+import { SocialIcon } from 'react-social-icons'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
+      <h1>
+        <img src={nopLogo} className="logo" alt="NÖP" />
+      </h1>
+      <p className="members">
+        <span>ARNAR - GUITAR</span>
+        <img className="iconSeparator" src={nopIcon} alt='' />
+        <span>ÁLFUR - VOCALS</span>
+        <img className="iconSeparator" src={nopIcon} alt='' />
+        <span>JÓHANN - DRUMS</span>
+        <img className="iconSeparator" src={nopIcon} alt='' />
+        <span>HARRÝ - BASS</span>
+      </p>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+        <p style={{ minWidth: 600 }}>
+          <iframe style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/track/4vICglWYruXlpiurAxN7hF?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <p className="social">
+        <SocialIcon network="facebook" target="_blank" bgColor="#fe4352" url="https://www.facebook.com/profile.php?id=100063684015723" />
+        &nbsp;
+        <SocialIcon network="instagram" target="_blank" bgColor="#fe4352" url="https://www.instagram.com/nop.band" />
       </p>
     </>
   )

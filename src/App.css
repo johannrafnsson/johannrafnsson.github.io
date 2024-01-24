@@ -1,21 +1,37 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
 .logo {
   height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #d2d3eaaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #d2d3eaaa);
+}
+
+.members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.members span {
+  cursor: pointer;
+  color: #888;
+  text-align: center;
+}
+
+.iconSeparator {
+  width:24px;
+  padding:2px 8px;
 }
 
 @keyframes logo-spin {
